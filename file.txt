@@ -1,0 +1,20 @@
+- Navbar needs to be added above the upload box. (4x buttons, split by a logo in the middle)
+- Below the upload box, there needs to be a second invisible box just like it. When uploading a file, the second box is faded in with the link + a copy button.
+- When uploading more than one file, the files + copy buttons keep getting appended to that second box.
+- Drag and drop for file upload
+- Pasting (ctrl + v) for file upload
+- Some color changes
+- The progress bar has to be made working.
+- When choosing a file to upload (or drag and drop / ctrl + v) the file should be uploaded immediately instead of having to press the upload button.
+- The upload procedure in the js code has to be altered to work a bit different
+
+The upload procedure right now is like one the following two options:
+1 Option: Choose file -&gt; Press upload button -&gt; It fails and shows a retry and cancel button -&gt; retry retries again / cancel goes back to the main div element with the upload button
+2 Option: Choose file -&gt; Press upload button -&gt; It works and starts to show a progress bar -&gt; When finished it shows a copy and done button. Copy copies the url and done goes back to the div element with the upload button
+
+The upload procedure should look like this in the end:
+Choose file (or drag n drop / pasting) -&gt; Upload starts automatically and switches to the progress bar view in the main div element -&gt; When finished it goes back to the div element with the upload button and shows the file in the new box below alongside a copy button. If it fails, it should also go back to the div element with the upload button, but show some kind of error. Like a little modal or something alike
+
+The navbar buttons should open a modal in the same style, but dont need any content. For the logo some kind of placeholder can be used, as it's not final yet. The color changes I can provide tomorrow.
+
+In case something is unclear, please let me know.
